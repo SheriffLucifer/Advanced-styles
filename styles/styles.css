@@ -110,6 +110,7 @@ li:not(:last-child) {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
+  margin-bottom: 0;
 }
 
 .footer__phone {
@@ -120,7 +121,8 @@ li:not(:last-child) {
   font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.6px;
-  margin: 16px 0;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 .language {
