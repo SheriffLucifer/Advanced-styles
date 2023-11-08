@@ -29,10 +29,10 @@ body {
 
 .navigation {
   width: 320px;
-  height: 1024px;
-  position: fixed;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
-    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  height: 100vh;
+  position: absolute;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
 }
 
 .header {
@@ -52,6 +52,13 @@ body {
 
 .search {
   margin: 18px 24px 0 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
 }
 
 .list {
@@ -78,7 +85,7 @@ li:not(:last-child) {
   }
 }
 
-.list__item__active {
+.list__item--active {
   opacity: 0.5;
 
   &::before {
@@ -92,10 +99,6 @@ li:not(:last-child) {
 
 .footer {
   margin-left: 24px;
-}
-
-.footer__icons {
-  margin-top: 268px;
 }
 
 .footer__icons > a {
